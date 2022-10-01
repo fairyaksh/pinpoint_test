@@ -4,6 +4,22 @@ html, body {
     /* scroll-behavior: smooth; */
 }
 
-li {
+header {
+    border: 2px solid red;    
+}
+
+nav {
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
     list-style-type: none;
+    display: inline-block;
+    border: 2px solid green;
+}
+.nav__logo {
+    border: 2px solid orange;
+    margin: px;
 }
