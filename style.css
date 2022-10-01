@@ -1,25 +1,46 @@
+/* ---- Global Styles ---- */
 html, body {
     margin: 0;
     padding: 0;
     /* scroll-behavior: smooth; */
 }
 
-header {
-    border: 2px solid red;    
-}
+/* ---- Font variables ---- */
+html {
+    --14px: 0.875rem;
+    --15px: 0.9375rem;
+    --16px: 1rem;
+    --17px: 1.0625rem;
+    --18px: 1.125rem;
+    --19px: 1.1875rem;
+    --20px: 1.25rem;
+    --21px: 1.3125rem;
+  }
 
+/* ---- Header ---- */
 nav {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
-
+.nav__menu {
+    /* border: 2px solid hotpink; */
+    padding: 0;
+}
 .nav__item {
+    font-size: var(--16px);
     list-style-type: none;
     display: inline-block;
-    border: 2px solid green;
+    margin: 10px;
+    /* border: 2px solid green; */
 }
-.nav__logo {
-    border: 2px solid orange;
-    margin: px;
+.nav__logo, .nav__button {
+    /* border: 2px solid orange; */
+    margin: 20px;
+}
+
+.nav__button {
+    background: 
+    border-radius: 5px;
 }
