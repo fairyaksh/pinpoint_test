@@ -5,8 +5,9 @@ html, body {
     /* scroll-behavior: smooth; */
 }
 
-/* ---- Font variables ---- */
-html {
+/* ---- Root variables ---- */
+:root {
+    /* font-sizes */
     --14px: 0.875rem;
     --15px: 0.9375rem;
     --16px: 1rem;
@@ -15,7 +16,15 @@ html {
     --19px: 1.1875rem;
     --20px: 1.25rem;
     --21px: 1.3125rem;
-  }
+    
+    /* colours */
+    --white: hsl(165, 40%, 98%);
+    --grey: hsl(210, 5%, 92%);
+    --teal: hsl(169, 55%, 41%);
+    --light-green: hsl(164, 12%, 42%);
+    --dark-green: hsl(163, 51%, 15%);
+    --navy: hsl(199, 31%, 14%);
+}
 
 /* ---- Header ---- */
 nav {
@@ -41,6 +50,6 @@ nav {
 }
 
 .nav__button {
-    background: 
+    background: var(--teal);
     border-radius: 5px;
 }
