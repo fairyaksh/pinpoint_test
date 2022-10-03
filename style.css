@@ -2,10 +2,11 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--dark-green);
     /* scroll-behavior: smooth; */
 }
 
-/* ---- Root variables ---- */
 :root {
     /* font-sizes */
     --14px: 0.875rem;
@@ -20,6 +21,7 @@ html, body {
     /* colours */
     --white: hsl(165, 40%, 98%);
     --grey: hsl(210, 5%, 92%);
+    --dark-grey: hsl(191, 5%, 47%);
     --teal: hsl(169, 55%, 41%);
     --light-green: hsl(164, 12%, 42%);
     --dark-green: hsl(163, 51%, 15%);
@@ -28,28 +30,94 @@ html, body {
 
 /* ---- Header ---- */
 nav {
-    /* border: 2px solid blue; */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .nav__menu {
-    /* border: 2px solid hotpink; */
     padding: 0;
 }
 .nav__item {
-    font-size: var(--16px);
+    font-size: var(--14px);
+    font-weight: 600;
+    color: var(--dark-green);
     list-style-type: none;
     display: inline-block;
     margin: 10px;
-    /* border: 2px solid green; */
+}
+.nav__logo {
+    width: 100px;
 }
 .nav__logo, .nav__button {
-    /* border: 2px solid orange; */
     margin: 20px;
 }
 
 .nav__button {
+    text-decoration: none;
+    font-size: var(--14px);
+    font-weight: 600;
+    color: var(--white);
     background: var(--teal);
     border-radius: 5px;
+    padding: 12px;
+}
+
+/* ---- Footer ---- */
+footer {
+    background: var(--grey);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* section 1 */
+.footer__wrapper {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.footer__brand {
+    /* border: 2px solid lightcoral; */
+    margin: 20px;
+    /* text-align: center; */
+}
+.footer__logo {
+    /* border: 2px solid purple; */
+    width: 100px;
+}
+.footer__headline {
+    /* border: 2px solid saddlebrown; */
+    text-align: left;
+}
+.footer__links {
+    /* border: 2px solid green; */
+    display: flex;
+}
+.footer__list {
+    list-style-type: none;
+    margin: 16px;
+
+}
+
+/* section 2 */
+.footer__text {
+    /* border: 2px solid teal; */
+    margin: 20px;
+    text-align: center;
+}
+
+/* section 3 */
+.footer__legal {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    margin: 20px 0 0 0;
+}
+.footer__legal  p:last-child, .footer__legal p:first-child {
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: var(--14px);
+    font-weight: 600;
+    color: var(--dark-grey);
 }
