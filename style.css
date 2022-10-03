@@ -82,6 +82,7 @@ nav {
     position: absolute;
     height: 100%;
     width: 100%;
+    font-size: var(--21px);
     color: var(--white);
     display: flex;
     align-items: center;
@@ -89,6 +90,39 @@ nav {
     flex-direction: column;
 }
 
+/* ---- Blocks ---- */
+.top-container, .bottom-container {
+    display: flex;
+    margin: 50px;
+    padding: 25px;
+}
+.top-container__text, .top-container__image {
+    width: 50%;
+}
+.bottom-container__text, .bottom-container__image {
+    width: 50%;
+}
+.top-container__text {
+    margin-right: 50px;
+}
+.bottom-container__image {
+    margin-right: 60px;
+}
+.top-container__image > img, .bottom-container__image > img {
+    border-radius: 5px;
+}
+.top-container__text > h3, .bottom-container__text > h3 {
+    font-size: var(--21px);
+}
+.top-container__text > p, .bottom-container__text > p {
+    font-size: var(--14px);
+    line-height: 25px;
+    width: 85%;
+}
+.top-container__text > a, .bottom-container__text > a {
+    display: inline-block;
+    margin-top: 10px;
+}
 /* ---- Footer ---- */
 footer {
     background: var(--grey);
