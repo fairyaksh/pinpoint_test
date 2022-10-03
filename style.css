@@ -1,13 +1,4 @@
 /* ---- Global Styles ---- */
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif;
-    color: var(--dark-green);
-    overflow-x: hidden;
-    /* scroll-behavior: smooth; */
-}
-
 :root {
     /* font-sizes */
     --14px: 0.875rem;
@@ -27,6 +18,15 @@ html, body {
     --light-green: hsl(164, 12%, 42%);
     --dark-green: hsl(163, 51%, 15%);
     --navy: hsl(199, 31%, 14%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--dark-green);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* ---- Header ---- */
@@ -51,6 +51,11 @@ nav {
 }
 .nav__logo, .nav__button {
     margin: 20px;
+}
+.nav__item > a {
+    text-decoration: none;
+    font-size: var(--14px);
+    color: var(--dark-green);
 }
 
 /* ---- Button ---- */
