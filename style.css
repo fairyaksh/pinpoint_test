@@ -4,6 +4,7 @@ html, body {
     padding: 0;
     font-family: 'Rubik', sans-serif;
     color: var(--dark-green);
+    overflow-x: hidden;
     /* scroll-behavior: smooth; */
 }
 
@@ -52,7 +53,8 @@ nav {
     margin: 20px;
 }
 
-.nav__button {
+/* ---- Button ---- */
+.button {
     text-decoration: none;
     font-size: var(--14px);
     font-weight: 600;
@@ -62,11 +64,29 @@ nav {
     padding: 12px;
 }
 
+/* ---- Hero ---- */
+.hero-image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(./assets/hero.jpg);
+}
+.hero-image__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* ---- Footer ---- */
 footer {
     background: var(--grey);
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 /* section 1 */
