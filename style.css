@@ -123,6 +123,44 @@ nav {
     display: inline-block;
     margin-top: 10px;
 }
+
+/* ----- CTA banner ---- */
+.CTA-wrapper {
+    background-color: #e0e1e5;
+    /* min-height: 200px;  */
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.CTA-wrapper__text, .CTA-wrapper__image {
+    width: 50%;
+}
+.CTA-wrapper__text {
+    padding: 5% 5% 5% 5%;
+}
+.CTA-wrapper__text > h4 {
+    /* border: 2px solid black; */
+    margin: 16px 0 16px 0;
+    font-size: var(--21px);
+}
+.CTA-wrapper__text > p {
+    font-size: var(--14px);
+    line-height: 25px;
+    width: 85%;
+}
+.CTA-wrapper__text > a {
+    display: inline-block;
+    margin-top: 10px;
+}
+.CTA-wrapper__image {
+    width: 50%;
+}
+.CTA-wrapper__image > img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+}
+
 /* ---- Footer ---- */
 footer {
     background: var(--grey);
