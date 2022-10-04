@@ -68,6 +68,27 @@ nav {
     border-radius: 5px;
     padding: 12px;
 }
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 15px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0px;
+}
 
 /* ---- Hero ---- */
 .hero-image {
@@ -261,23 +282,38 @@ footer {
     width: 100%;
 }
 .footer__wrapper {
+    margin: 0 30px 0 30px;
     /* border: 2px solid blue; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.footer__wrapper::before {
+    content: '';
+    background: hsl(0, 0%, 87%);
+    position: absolute;
+    top: 223px;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    height: 2px;
 }
 
 /* section 1 */
-/* .footer__brand {
-    border: 2px solid lightcoral;
-} */
+.footer__brand {
+    /* border: 2px solid lightcoral; */
+}
 .footer__logo {
     /* border: 2px solid purple; */
     width: 100px;
 }
 .footer__headline {
     /* border: 2px solid saddlebrown; */
+    margin-top: 50px;
     text-align: left;
+    font-weight: 600;
+    font-size: var(--14px);
     color: var(--navy);
 }
 
