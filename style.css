@@ -195,7 +195,7 @@ nav {
     box-shadow: 5px 5px 1px 1px var(--dark-green);
     border-radius: 5px;
     border: 1px solid var(--dark-green);
-    width: 70%;
+    width: 800px;
     display: flex;
 }
 .review-wrapper__image {
@@ -450,7 +450,7 @@ input[type=checkbox]{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 50%;
+        width: 60%;
     }
     .review-wrapper__image {
         width: 100%;
